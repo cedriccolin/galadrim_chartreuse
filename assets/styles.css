@@ -15,19 +15,20 @@ a {
 }
 
 a:hover {
-    color: #349ff1;
+    color: #00A559;
 }
 
 nav {
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
 
     background: #fafafa;
 
-    border-bottom: 1px solid rgba(0,0,0,0.25);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.15);
 
-    width: calc(100% - 30px);
+    width: 100%;
     padding: 0 15px;
     height: 60px;
 
@@ -46,7 +47,7 @@ nav .logo img, nav .logo a {
     width: auto;
 }
 
-nav .link, footer .link {
+footer .link {
     height: 100%;
     margin: 0 0 0 auto;
 
@@ -55,9 +56,88 @@ nav .link, footer .link {
     align-items: center;
 }
 
-nav .link a {
-    margin: 0 10px;
-    height: calc(100% - 2px);
+nav .burger {
+    margin: 0 20px 0 auto;
+}
+
+/* L'affichage du burger ou de la croix dans la barre de navigation */
+
+nav.burger_closed .burger #menu_invisible {
+    display: block;
+}
+nav.burger_closed .burger #menu_visible {
+    display: none;
+}
+
+nav.burger_opened .burger #menu_invisible {
+    display: none;
+}
+nav.burger_opened .burger #menu_visible {
+    display: block;
+}
+
+nav .burger svg {
+    height: 50%;
+    width: auto;
+
+    margin: 40% 0;
+
+    color: #000;
+
+    cursor: pointer;
+}
+
+
+/* Style du menu de navigation en lui-même */
+nav .opened_burger {
+    display: none;
+}
+nav.burger_opened .opened_burger {
+    display: flex;
+    flex-direction: row;
+
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+
+    animation: open_burger_menu 0.25s;
+}
+
+nav .opened_burger .background {
+    background: rgba(0,0,0,0.5);
+    width: 80%;
+    max-width: calc(100% - 300px);
+}
+
+nav .opened_burger .docker {
+    width: 20%;
+    min-width: 300px;
+    height: calc(100% - 3px);
+    margin-top: 3px;
+    background: #f5f5f5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+nav .opened_burger .docker .link {
+    height: 400px;
+    margin-bottom: calc(75% - 400px);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .opened_burger .docker a {
+    height: 20px;
+    margin: 40px 0 0 0;
+    padding: 25px;
 
     display: flex;
     align-items: center;
@@ -66,21 +146,58 @@ nav .link a {
     font-size: 0.9em;
 
     border-bottom: 2px solid transparent;
+    text-decoration: none;
+    text-align: center;
 }
 
-nav .link a:hover {
-    border-bottom: 2px solid #1186d7;
+nav .opened_burger .docker .waves {
+    width: 100%;
+    height: 25%;
+
+    margin-top: auto;
+
+    color: #f5f5f5;
+}
+
+nav .opened_burger .docker .waves svg {
+    height: auto;
+    width: 100%;
+}
+
+@keyframes open_burger_menu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav .opened_burger .docker {
+        width: 100%;
+    }
+    nav .opened_burger .docker .waves svg {
+        width: 100vw;
+        height: auto;
+    }
+    nav .opened_burger .background {
+        display: none;
+    }
 }
 
 
-/* TODO C'est temporaire, le temps de définir la style list et savoir quel wireframe a été choisi */
+
+
 main {
     margin-top: 61px;
-
     min-height: 500px;
-
     padding: 20px;
 }
+
+
+
+/* Pied de page */
 
 footer {
     display: flex;
@@ -93,7 +210,7 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.25);
 }
 
-footer section {
+footer div.footer_section {
     width: calc(50% - 30px); /* 15px * 2 -> le décalage du padding */
     padding: 15px;
 
@@ -121,17 +238,36 @@ footer .link a {
         flex-direction: column;
     }
 
-    footer section {
+    footer div.footer_section {
         width: 100%;
+
+        padding: 10px 0;
     }
 
-    footer section:first-child {
-        height: 200px;
+    footer div.footer_section:first-child {
+        height: 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    footer section .link {
-        padding: 0 15px;
-        width: calc(100% - 30px);
+
+    footer div.footer_section p {
+        margin: 0;
+    }
+
+    footer div.footer_section:last-child {
+        margin: 0;
+        width: 100%;
+
+        border-top: 1px solid rgba(0,0,0,0.133);
+    }
+
+    footer div.footer_section .link {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -144,6 +280,14 @@ footer .link a {
     line-height: 155%;
     font-size: 20px;
 }
+
+/*
+
+
+Page engagement
+
+
+*/
 
 #texte_bilan_carbone{
     text-align: justify;
