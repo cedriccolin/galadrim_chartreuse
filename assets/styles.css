@@ -294,7 +294,7 @@ Page engagement
     text-align: justify;
 }
 
-#section_gauche{
+.section_gauche{
     display: flex;
     flex-direction: row;
 }
@@ -313,7 +313,7 @@ Page engagement
     align-items: center;
 }
 
-#section_droit{
+.section_droit{
     display: flex;
     flex-direction: row;
 }
@@ -338,7 +338,7 @@ Page engagement
     width: 50%;
 }
 
-#reduction_carbone_texte{
+.reduction_carbone_texte{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,7 +346,7 @@ Page engagement
 }
 
 main.engagement{
-    margin: 0 30px;
+    margin: 61px 30px 0 30px;
 }
 
 
