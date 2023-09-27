@@ -1,0 +1,364 @@
+/*
+
+
+Page accueil
+
+
+*/
+
+#texte_slogan_galadrim{
+    /*text-align:center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 50px;
+
+    padding: 90px;
+    line-height: 155%;
+    font-size: 25px; 
+}
+
+#logo_3d_galadrim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin1{
+    margin-left: 61px;
+    margin-right: 61px;
+}
+
+.img_accueil{
+    width: 50%;
+    height: 50%;
+}
+
+
+#texte_resume{
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#img_resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+    }
+
+main.index h1, h2{
+    text-align: center;
+}
+
+main.index{
+    margin: 61px 30px 0 30px;
+}
+
+.desc{
+    padding: 70px;
+    line-height: 155%;
+    font-size: 20px; 
+}
+
+/*
+
+
+others
+
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #000000;
+    background: #ffffff;
+}
+
+a {
+    text-underline: none;
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover {
+    color: #00A559;
+}
+
+nav {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    background: #fafafa;
+
+    box-shadow: 0 2px 3px rgba(0,0,0,0.15);
+
+    width: 100%;
+    padding: 0 15px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+nav .logo {
+    height: 60px;
+    margin: auto 0;
+}
+
+nav .logo img, nav .logo a {
+    max-height: 100%;
+    width: auto;
+}
+
+footer .link {
+    height: 100%;
+    margin: 0 0 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav .burger {
+    margin: 0 20px 0 auto;
+}
+
+/* L'affichage du burger ou de la croix dans la barre de navigation */
+
+nav.burger_closed .burger #menu_invisible {
+    display: block;
+}
+nav.burger_closed .burger #menu_visible {
+    display: none;
+}
+
+nav.burger_opened .burger #menu_invisible {
+    display: none;
+}
+nav.burger_opened .burger #menu_visible {
+    display: block;
+}
+
+nav .burger svg {
+    height: 50%;
+    width: auto;
+
+    margin: 40% 0;
+
+    color: #000;
+
+    cursor: pointer;
+}
+
+
+/* Style du menu de navigation en lui-même */
+nav .opened_burger {
+    display: none;
+}
+nav.burger_opened .opened_burger {
+    display: flex;
+    flex-direction: row;
+
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+
+    animation: open_burger_menu 0.25s;
+}
+
+nav .opened_burger .background {
+    background: rgba(0,0,0,0.5);
+    width: 80%;
+    max-width: calc(100% - 300px);
+}
+
+nav .opened_burger .docker {
+    width: 20%;
+    min-width: 300px;
+    height: calc(100% - 3px);
+    margin-top: 3px;
+    background: #f5f5f5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+nav .opened_burger .docker .link {
+    height: 400px;
+    margin-bottom: calc(75% - 400px);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .opened_burger .docker a {
+    height: 20px;
+    margin: 40px 0 0 0;
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+    font-size: 0.9em;
+
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav .opened_burger .docker .waves {
+    width: 100%;
+    height: 25%;
+
+    margin-top: auto;
+
+    color: #f5f5f5;
+}
+
+nav .opened_burger .docker .waves svg {
+    height: auto;
+    width: 100%;
+}
+
+@keyframes open_burger_menu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav .opened_burger .docker {
+        width: 100%;
+    }
+    nav .opened_burger .docker .waves svg {
+        width: 100vw;
+        height: auto;
+    }
+    nav .opened_burger .background {
+        display: none;
+    }
+}
+
+
+
+
+main {
+    margin-top: 61px;
+    min-height: 500px;
+    padding: 20px;
+}
+
+
+
+/* Pied de page */
+
+footer {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    width: 100%;
+    background: #fcfcfc;
+
+    border-top: 1px solid rgba(0,0,0,0.25);
+}
+
+footer div.footer_section {
+    width: calc(50% - 30px); /* 15px * 2 -> le décalage du padding */
+    padding: 15px;
+
+    height: 100%;
+
+    text-align: center;
+}
+
+footer .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+footer .link a {
+    margin: auto;
+    padding: 10px 0;
+
+    width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer div.footer_section {
+        width: 100%;
+
+        padding: 10px 0;
+    }
+
+    footer div.footer_section:first-child {
+        height: 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    footer div.footer_section p {
+        margin: 0;
+    }
+
+    footer div.footer_section:last-child {
+        margin: 0;
+        width: 100%;
+
+        border-top: 1px solid rgba(0,0,0,0.133);
+    }
+
+    footer div.footer_section .link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.image_gauche{
+    width:95%;
+    height: 95%;
+}
+.description{
+    padding: 70px;
+    line-height: 155%;
+    font-size: 20px;
+}
