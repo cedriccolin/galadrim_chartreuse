@@ -1,6 +1,6 @@
-var nodes1 = Array.from(document.getElementsByClassName("timeline-badge"));
-var nodes2 = Array.from(document.getElementsByClassName("timeline-panel"));
-var nodes3 = Array.from(document.getElementsByClassName("timeline-panel-img"));
+const nodes1 = Array.from(document.getElementsByClassName("timeline-badge"));
+const nodes2 = Array.from(document.getElementsByClassName("timeline-panel"));
+const nodes3 = Array.from(document.getElementsByClassName("timeline-panel-img"));
 const nodes = nodes1.concat(nodes2, nodes3);
 
 const cache = {
@@ -13,7 +13,7 @@ function init() {
     recache();
     document.addEventListener("scroll", throttle(scrollCheck, 10));
     window.addEventListener("resize", debounce(recache, 50));
-};
+}
 
 function recache() {
     cache.viewport = {
@@ -32,14 +32,21 @@ function scrollCheck() {
     cache.rects.forEach((rect, i) => {
         nodes[i].classList.toggle("active", rect.y - offset.y < midline);
     });
-};
+}
 
 function getScrollOffset() {
+    if (typeof window === 'undefined') {
+        return {
+            x: 0,
+            y: 0
+        };
+    }
+
     return {
-        x: window.pageXOffset,
-        y: window.pageYOffset
+        x: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+        y: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
     };
-};
+}
 
 function throttle(fn, limit, context) {
     let wait;
@@ -53,7 +60,7 @@ function throttle(fn, limit, context) {
             }, limit);
         }
     };
-};
+}
 
 function debounce(fn, limit, u) {
     let e;
@@ -76,20 +83,20 @@ function rect(e) {
         x: r.left + o.x,
         y: r.top + o.y
     };
-};
+}
 
 //by Saym Ash//
 $(window).on("load", function () {
     $(window).scroll(function () {
-        var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+        const windowBottom = $(this).scrollTop() + $(this).innerHeight();
         $(".timeline-panel").each(function () {
-            var objectBottom = $(this).offset().top - 200 + $(this).outerHeight();
+            const objectBottom = $(this).offset().top - 200 + $(this).outerHeight();
             if (objectBottom < windowBottom) {
-                if ($(this).css("opacity") == 0) {
+                if ($(this).css("opacity") === 0) {
                     $(this).fadeTo(500, 1);
                 }
             } else {
-                if ($(this).css("opacity") == 1) {
+                if ($(this).css("opacity") === 1) {
                     $(this).fadeTo(500, 0);
                 }
             }

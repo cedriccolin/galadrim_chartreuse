@@ -8,6 +8,10 @@ body {
     background: #ffffff;
 }
 
+p {
+    font-size: 16px;
+}
+
 a {
     text-underline: none;
     text-decoration: none;
@@ -66,7 +70,7 @@ nav {
     box-shadow: 0 2px 3px rgba(0,0,0,0.15);
 
     width: 100%;
-    padding: 0 15px;
+    padding: 0;
     height: 60px;
 
     display: flex;
@@ -95,6 +99,7 @@ footer .link {
 
 nav .burger {
     margin: 0 20px 0 auto;
+    height: 60px
 }
 
 /* L'affichage du burger ou de la croix dans la barre de navigation */
@@ -316,7 +321,6 @@ footer .link a {
 .description{
     padding: 70px;
     line-height: 155%;
-    font-size: 20px;
 }
 
 /*
