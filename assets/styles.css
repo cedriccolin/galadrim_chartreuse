@@ -77,12 +77,9 @@ nav .link a:hover {
 main {
     margin-top: 61px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
     min-height: 500px;
+
+    padding: 20px;
 }
 
 footer {
@@ -136,4 +133,37 @@ footer .link a {
         padding: 0 15px;
         width: calc(100% - 30px);
     }
+}
+
+.image_gauche{
+    width:95%;
+    height: 95%;
+}
+.texte_droite{
+    padding: 60px;
+}
+
+#texte_bilan_carbone{
+    text-align: justify;
+}
+
+#section_bilan_carbone{
+    display: flex;
+    flex-direction: row;
+}
+
+#bilan_carbone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bilan_carbone_texte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.engagement h1, main.engagement h2 {
+    text-align: center;
 }
