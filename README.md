@@ -20,7 +20,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 # Validation par W3C
 
 [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2F)
+
 [presentation_entreprise.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fpresentation_entreprise.html)
+
 [equipe_personnel.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fequipe_personnel.html)
+
 [performance_realisation.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fperformance_realisation.html)
+
 [engagement_social_responsabilité.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fengagement_social_responsabilit%25C3%25A9.html)
