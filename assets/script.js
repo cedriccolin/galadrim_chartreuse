@@ -34,6 +34,13 @@ function close_menu_key_shortcut(){
     )
 }
 
+/**
+ * Closes the menu by clicking on the background element.
+ *
+ * @throws {Error} If no element with the path '.opened_burger .background' is found.
+ *
+ * @return {void}
+ */
 function close_menu_by_clicking_on_background(){
     let elm = document.querySelector(".opened_burger .background");
     if (!elm) throw new Error("No element with the path '.opened_burger .background' had been found");
