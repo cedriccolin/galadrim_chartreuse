@@ -12,6 +12,33 @@ window.onload = function(){
 function burger_navigation(){
     burger_opening_button();
     burger_closing_button();
+
+    close_menu_key_shortcut();
+    close_menu_by_clicking_on_background();
+}
+
+/**
+ * Attaches a keyup event listener to the document body that triggers the
+ * close_menu() function when the "Escape" key is released.
+ *
+ * @return {void}
+ */
+function close_menu_key_shortcut(){
+    document.body.addEventListener(
+        "keydown",
+        (k) => {
+            if (["Escape", "Home"].includes(k.code)) {
+                close_menu();
+            }
+        }
+    )
+}
+
+function close_menu_by_clicking_on_background(){
+    let elm = document.querySelector(".opened_burger .background");
+    if (!elm) throw new Error("No element with the path '.opened_burger .background' had been found");
+
+    elm.addEventListener("click", close_menu);
 }
 
 /**
