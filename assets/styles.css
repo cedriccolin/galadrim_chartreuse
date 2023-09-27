@@ -479,3 +479,92 @@ main.equipe section#statistics #case4 {
     grid-row: 1 / 3;
     grid-column: 3;
 }
+
+
+
+/*
+
+
+Page accueil
+
+
+*/
+
+main.home {
+    width: 100%;
+    height: auto;
+
+    margin: 61px 0 0 0;
+}
+
+main.home .first_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 70%;
+    margin: 0 auto;
+
+    height: calc(100vh - 61px - 40px);
+}
+
+main.home .first_section .content {
+    width: calc(50% - 30px);
+}
+
+main.home .first_section .content p {
+    font-size: 21px;
+}
+
+main.home .first_section .content h1 {
+    font-size: 48px;
+}
+
+main.home .first_section .mesh {
+    width: 35%;
+    height: auto;
+
+    padding: 0 30px;
+
+    margin: auto;
+}
+
+main.home section.part {
+    display: flex;
+    flex-direction: row;
+
+    height: 200px;
+
+    width: 70%;
+    margin: 100px auto;
+}
+
+main.home section.part img {
+    width: auto;
+    height: 100%;
+}
+
+main.home section.part .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+    margin: auto 0 auto auto;
+
+    text-align: left;
+}
+
+main.home section.part .container h2 {
+    font-weight: 700;
+    margin-right: auto;
+}
+
+
+
+main.home section.part.section_droit {
+    flex-direction: row-reverse;
+}
+main.home section.part.section_droit .container {
+    margin: auto auto auto 0;
+}
