@@ -1,3 +1,84 @@
+/*
+
+
+Page accueil
+
+
+*/
+
+#texte_slogan_galadrim{
+    /*text-align:center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 50px;
+
+    padding: 90px;
+    line-height: 155%;
+    font-size: 25px; 
+}
+
+#logo_3d_galadrim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin1{
+    margin-left: 61px;
+    margin-right: 61px;
+}
+
+.img_accueil{
+    width: 50%;
+    height: 50%;
+}
+
+
+#texte_resume{
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#img_resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+    }
+
+main.index h1, h2{
+    text-align: center;
+}
+
+main.index{
+    margin: 61px 30px 0 30px;
+}
+
+.desc{
+    padding: 70px;
+    line-height: 155%;
+    font-size: 20px; 
+}
+
+/*
+
+
+others
+
+
+
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
@@ -280,159 +361,4 @@ footer .link a {
     padding: 70px;
     line-height: 155%;
     font-size: 20px;
-}
-
-/*
-
-
-Page accueil
-
-
-*/
-
-#texte_slogan_galadrim{
-    /*text-align:center;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    size: 50px;
-
-    padding: 90px;
-    line-height: 155%;
-    font-size: 25px; 
-}
-
-#logo_3d_galadrim{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.margin1{
-    margin-left: 61px;
-    margin-right: 61px;
-}
-
-.img_accueil{
-    width: 50%;
-    height: 50%;
-}
-
-
-#texte_resume_left{
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-#texte_resume_right{
-    text-align: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-
-#img_resume{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 18%;
-    }
-
-main.index h1, h2{
-    text-align: center;
-}
-
-main.index{
-    margin: 61px 30px 0 30px;
-}
-
-.desc{
-    padding: 70px;
-    line-height: 155%;
-    font-size: 20px; 
-}
-
-
-
-/*
-
-
-Page engagement
-
-
-*/
-
-#texte_bilan_carbone{
-    text-align: justify;
-}
-
-.section_gauche{
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-#bilan_carbone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#bilan_carbone_texte{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section_droit{
-    display: flex;
-    flex-direction: row;
-}
-
-#enquete_bilan_texte{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#enquete_bilan_carbone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#reduction_carbone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
-.reduction_carbone_texte{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-main.engagement{
-    margin: 61px 30px 0 30px;
-}
-
-
-main.engagement h1, main.engagement h2 {
-    text-align: center;
 }

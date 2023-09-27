@@ -18,7 +18,7 @@
 
 .UpperPart-text {
     height: auto;
-    padding: 50px 50px 50px 0;
+    padding: 50px 50px 50px 0px;
     text-align: left;
     line-height: 2;
 }
@@ -51,14 +51,14 @@
     margin-top: -10vh;
     margin-left: 25%;
     margin-right: 25%;
-    border-right: 1px solid #0E3B85;
+    border-right: 1.2px solid #0E3B85;
     z-index: 3;
 }
 
 .horizontal-lines {
     display: block;
-    width: 0;
-    height: 1px;
+    width: 0px;
+    height: 1.2px;
     margin-top: 30vh;
     position: absolute;
     background-color: #0E3B85;
@@ -84,8 +84,16 @@
     -moz-animation-iteration-count: 1;
 }
 
+#line-left {
+    left: 50%;
+}
+
 #line-right {
     right: 25%;
+}
+
+#line-center {
+    margin: auto;
 }
 
 /************************************************************************************/
@@ -104,9 +112,9 @@
     bottom: 0;
     position: fixed;
     content: " ";
-    width: 2px;
+    width: 1.5px;
     background-color: lightblue;
-    border: 1px solid lightblue;
+    border: 1.25px solid lightblue;
     left: 50%;
     height: 100%;
     z-index: -5;
@@ -117,10 +125,10 @@
     bottom: 0;
     position: fixed;
     content: " ";
-    width: 2px;
+    width: 1.5px;
     background-color: #0E3B85;
     left: 50%;
-    border: 1px solid #0E3B85;
+    border: 1.25px solid #0E3B85;
     height: 50vh;
     z-index: -5;
 }
@@ -211,6 +219,30 @@
 
 /************************************************************************************/
 
+.timeline-badge.active {
+    color: #0E3B85;
+    animation-name: lines;
+    -webkit-animation-name: lines;
+    -ms-animation-name: lines;
+    -moz-animation-name: lines;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+}
+
 /************************************************************************************/
 
 .timeline-panel-body {
@@ -219,9 +251,78 @@
 
 /************************************************************************************/
 
-/************************************************************************************/
+.timeline-panel.active:after {
+    animation-name: lines2;
+    -webkit-animation-name: lines2;
+    -ms-animation-name: lines2;
+    -moz-animation-name: lines2;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+}
 
 /************************************************************************************/
+
+.timeline-panel.active:before {
+    animation-name: lines3;
+    -webkit-animation-name: lines3;
+    -ms-animation-name: lines3;
+    -moz-animation-name: lines3;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+}
+
+/************************************************************************************/
+
+.timeline-panel-img.active:before {
+    animation-name: ani-img;
+    -webkit-animation-name: ani-img;
+    -ms-animation-name: ani-img;
+    -moz-animation-name: ani-img;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+}
 
 /************************************************************************************/
 
@@ -282,6 +383,7 @@
 
 
 .endpart {
+    position: relative;
     height: 50vh;
     background-color: white;
     z-index: 3;
@@ -296,7 +398,7 @@
 /************************************************************************************/
 @keyframes animated-line {
     0% {
-        width: 0;
+        width: 0px;
     }
 
     100% {
@@ -372,7 +474,7 @@
     }
 
     50% {
-        border: 1px solid #7390BF;
+        border: 1.25px solid #7390BF;
         transform: scale(2, 2);
         -ms-transform: scale(2, 2);
         -webkit-transform: scale(2, 2);
@@ -380,7 +482,7 @@
     }
 
     100% {
-        border: 2px solid #0E3B85;
+        border: 1.5px solid #0E3B85;
         transform: scale(1, 1);
         -ms-transform: scale(1, 1);
         -webkit-transform: scale(1, 1);
@@ -398,7 +500,7 @@
     }
 
     50% {
-        border: 1px solid #7390BF;
+        border: 1.25px solid #7390BF;
         transform: scale(1.5, 1.5);
         -ms-transform: scale(1.5, 1.5);
         -webkit-transform: scale(1.5, 1.5);
@@ -406,7 +508,7 @@
     }
 
     100% {
-        border: 2px solid #0E3B85;
+        border: 1.5px solid #0E3B85;
         transform: scale(1, 1);
         -ms-transform: scale(1, 1);
         -webkit-transform: scale(1, 1);
@@ -420,12 +522,12 @@
     }
 
     50% {
-        height: 1px;
+        height: 1.25px;
         background-color: #7390BF;
     }
 
     100% {
-        height: 2px;
+        height: 1.5px;
         background-color: #0E3B85;
     }
 }
@@ -466,10 +568,35 @@
         position: relative;
     }
 
+    .timeline-badge.active {
+        color: #0E3B85;
+        animation-name: lines-mob;
+        -webkit-animation-name: lines-mob;
+        -ms-animation-name: lines-mob;
+        -moz-animation-name: lines-mob;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-delay: 0s;
+        -ms-animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        -moz-animation-delay: 0s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        -ms-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        -webkit-animation-iteration-count: 1;
+        -ms-animation-iteration-count: 1;
+        -moz-animation-iteration-count: 1;
+    }
+
     .timeline>li>.timeline-panel {
         width: 100vw;
+        height: 35vh;
         float: none;
-        left: 0;
+        left: 0%;
         background-color: white;
         z-index: 5;
         display: block;
@@ -529,7 +656,7 @@
         }
 
         50% {
-            border: 1px solid #7390BF;
+            border: 1.25px solid #7390BF;
             transform: scale(1.2, 1.2);
             -ms-transform: scale(1.2, 1.2);
             -webkit-transform: scale(1.2, 1.2);
@@ -537,7 +664,7 @@
         }
 
         100% {
-            border: 2px solid #0E3B85;
+            border: 1.5px solid #0E3B85;
             transform: scale(1, 1);
             -ms-transform: scale(1, 1);
             -webkit-transform: scale(1, 1);
