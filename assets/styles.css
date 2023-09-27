@@ -139,18 +139,22 @@ footer .link a {
     width:95%;
     height: 95%;
 }
-.texte_droite{
-    padding: 60px;
+.description{
+    padding: 70px;
+    line-height: 155%;
+    font-size: 20px;
 }
 
 #texte_bilan_carbone{
     text-align: justify;
 }
 
-#section_bilan_carbone{
+#section_gauche{
     display: flex;
     flex-direction: row;
 }
+
+
 
 #bilan_carbone{
     display: flex;
@@ -159,6 +163,23 @@ footer .link a {
 }
 
 #bilan_carbone_texte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_droit{
+    display: flex;
+    flex-direction: row;
+}
+
+#enquete_bilan_texte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enquete_bilan_carbone{
     display: flex;
     justify-content: center;
     align-items: center;
