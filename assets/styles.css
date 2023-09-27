@@ -322,6 +322,7 @@ Page engagement
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #enquete_bilan_carbone{
@@ -329,6 +330,25 @@ Page engagement
     justify-content: center;
     align-items: center;
 }
+
+#reduction_carbone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#reduction_carbone_texte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main.engagement{
+    margin: 0 30px;
+}
+
 
 main.engagement h1, main.engagement h2 {
     text-align: center;
