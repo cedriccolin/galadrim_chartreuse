@@ -568,3 +568,104 @@ main.home section.part.section_droit {
 main.home section.part.section_droit .container {
     margin: auto auto auto 0;
 }
+
+
+
+/*
+
+
+Page presentation
+
+
+ */
+
+main.presentation {
+    /* TODO */
+}
+
+
+/**
+
+
+Page destinée aux performances et réalisations de l'entreprise
+
+
+ */
+
+
+main.perf_rel section.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 75%;
+    margin: 75px auto;
+}
+
+main.perf_rel section.flex.reversed {
+    flex-direction: row-reverse;
+}
+
+/* Conteneur de texte dans chaque section */
+main.perf_rel .text-container {
+    width: 50%;
+    margin: 0 auto 0 0;
+}
+
+/* Image à côté du texte */
+main.perf_rel section img {
+    width: auto;
+    height: auto;
+    max-height: 200px;
+    margin-left: auto;
+}
+
+main.perf_rel section.reversed .text-container {
+    margin: 0 0 0 auto;
+}
+
+main.perf_rel section.reversed img {
+    margin: 0 auto 0 0;
+}
+
+main.perf_rel .section-big-title {
+    font-size: 3em;
+    text-align: center;
+}
+
+main.perf_rel .text-with-img {
+    max-width: 80%;
+}
+
+main.perf_rel .bloc {
+    width: 70%;
+    margin: 150px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+main.perf_rel .home {
+    height: calc(100vh - 61px - 40px);
+    width: 70%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main.perf_rel .home img {
+    max-height: 350px;
+}
+
+main.perf_rel .home .text-container {
+    margin-left: auto;
+}
+
+main.perf_rel .home h1 {
+    font-size: 1.5em;
+}
