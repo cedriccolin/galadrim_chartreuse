@@ -676,3 +676,46 @@ main.perf_rel .home h1 {
 main.perf_rel .home p {
     font-size: 1.2em;
 }
+
+
+/* Go top */
+
+.go_top {
+    position: fixed;
+    margin: 50px;
+
+    bottom: 0;
+    right: 0;
+
+    width: 50px;
+    height: 50px;
+
+    background: #000;
+    border-radius: 12px;
+    color: #fafafa;
+    transition: 0.15s ease;
+}
+
+.go_top img {
+    height: 45px;
+    width: 45px;
+
+    color: #fff;
+
+    margin: auto;
+    transition: 0.15s ease;
+}
+
+.go_top:hover {
+    background: #fafafa;
+    color: #000;
+
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    transition: 0.15s ease;
+}
+
+.go_top:hover img {
+    color: #00A559;
+
+    transition: 0.15s ease;
+}
