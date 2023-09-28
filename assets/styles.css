@@ -599,7 +599,7 @@ main.perf_rel section.flex {
     align-items: center;
 
     width: 75%;
-    margin: 75px auto;
+    margin: 25px auto;
 }
 
 main.perf_rel section.flex.reversed {
@@ -616,7 +616,7 @@ main.perf_rel .text-container {
 main.perf_rel section img {
     width: auto;
     height: auto;
-    max-height: 200px;
+    max-height: 500px;
     margin-left: auto;
 }
 
@@ -659,13 +659,20 @@ main.perf_rel .home {
 }
 
 main.perf_rel .home img {
-    max-height: 350px;
+    max-width: 550px;
 }
 
 main.perf_rel .home .text-container {
     margin-left: auto;
+    width: calc(100% - 550px - 50px);
+
 }
 
 main.perf_rel .home h1 {
-    font-size: 1.5em;
+    font-size: 3em;
+}
+
+
+main.perf_rel .home p {
+    font-size: 1.2em;
 }
