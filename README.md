@@ -14,7 +14,13 @@
 
 # Presentation du projet
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Notre projet est de créer un site informatif qui retranscrit tout d’abord Galadrim ; entreprise du
+numérique dans le développement de produits digitaux adaptés aux marchés. Dans celui-ci,
+nous aurons retranscrit l’histoire de Galadrim depuis sa création jusqu’à son évolution actuelle
+par le biais de la présentation de l’entreprise. Mais aussi l’équipe et le personnel à l’aide de
+statistiques et d’organigrammes. Et pour finir, nous aurons inscrit les rapports économiques et
+d’engagement de l’entreprise Galadrim.
+- La Team Chartreuse.
 
 # Validation par W3C
 
