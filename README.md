@@ -1,5 +1,11 @@
 # Sujet de SAE 5 et 6
 
+# Information importante
+
+Cette branche est la branche associée au développement du site web.
+
+> Tout contenu sur cette page est soumis à modification
+
 # Sujet
 
 [Acceuil | Team Chartreuse](https://cedriccolin.github.io/galadrim_chartreuse/)
