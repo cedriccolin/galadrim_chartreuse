@@ -580,17 +580,49 @@ Page presentation
  */
 
 main.presentation {
-    /* TODO */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.presentation .main_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 75%;
+
+    height: calc(100vh - 61px);
 }
 
 
-/**
+main.presentation .main_section img {
+    width: 40%;
+    margin: auto 40px auto 0;
+}
+
+main.presentation .main_section .docker {
+    width: 50%;
+    margin: auto 0 auto auto;
+}
+
+main.presentation .main_section .docker p {
+    margin: 20px auto 25px 0;
+}
+
+main.presentation section {
+    width: 80%;
+
+    margin: 20px auto;
+}
+
+    /**
 
 
-Page destinée aux performances et réalisations de l'entreprise
+    Page destinée aux performances et réalisations de l'entreprise
 
 
- */
+     */
 
 
 main.perf_rel section.flex {
