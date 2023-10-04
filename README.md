@@ -2,7 +2,7 @@
 
 # Sujet
 
-[Chartreuse | Presentation de galadrim.](https://github.com/cedriccolin/galadrim_chartreuse)
+[Acceuil | Team Chartreuse](https://cedriccolin.github.io/galadrim_chartreuse/)
 
 ## Membres du groupe 
 
