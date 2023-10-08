@@ -8,10 +8,6 @@ body {
     background: #ffffff;
 }
 
-p {
-    font-size: 16px;
-}
-
 a {
     text-underline: none;
     text-decoration: none;
@@ -184,8 +180,6 @@ nav .opened_burger .docker a {
     display: flex;
     align-items: center;
     vertical-align: middle;
-
-    font-size: 0.9em;
 
     border-bottom: 2px solid transparent;
     text-decoration: none;
@@ -475,10 +469,6 @@ main.equipe .start img {
     height: auto;
 }
 
-main.equipe .start h1 {
-    font-size: 1.75em;
-}
-
 main.equipe .start .content {
     width: 40%;
     margin: auto;
@@ -565,14 +555,6 @@ main.home .first_section {
 
 main.home .first_section .content {
     width: calc(50% - 30px);
-}
-
-main.home .first_section .content p {
-    font-size: 21px;
-}
-
-main.home .first_section .content h1 {
-    font-size: 48px;
 }
 
 main.home .first_section .mesh {
@@ -752,16 +734,6 @@ main.perf_rel .home img {
 main.perf_rel .home .text-container {
     margin-left: auto;
     width: calc(100% - 550px - 50px);
-
-}
-
-main.perf_rel .home h1 {
-    font-size: 3em;
-}
-
-
-main.perf_rel .home p {
-    font-size: 1.2em;
 }
 
 
@@ -805,4 +777,76 @@ main.perf_rel .home p {
     color: #00A559;
 
     transition: 0.15s ease;
+}
+
+
+/* Normalisation du style des pages */
+
+
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 26px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+
+p.big {
+    font-size: 21px;
+}
+
+h1.big {
+    font-size: 48px;
+}
+
+
+.container  {
+    width: 80%;
+    margin: 10px auto;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.container.reversed {
+    flex-direction: row-reverse;
+}
+
+.container .right {
+    max-width: 45%;
+    margin: 0 0 0 auto;
+}
+
+.container .left {
+    width: 45%;
+    margin: 0 auto 0 0;
+}
+
+.container .image img {
+    max-width: 80%;
+    height: auto;
+    max-height: 350px;
+}
+
+.container .image h6 {
+    margin: 2px 0 0 0;
+    font-weight: normal;
+    font-style: italic;
 }
