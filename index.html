@@ -76,7 +76,8 @@
             <p class="big desc texte_slogan_galadrim">Galadrim est une entreprise du numérique dans le développement de produits digitaux adaptés aux marchés</p>
         </div>
         <!-- l'image à gauche -->
-        <img class="mesh" src="public/image/home/mesh.png" alt="image relative au logo de Galadrim en 3 dimensions">
+<!--        <img class="mesh" src="public/image/home/mesh.png" alt="image relative au logo de Galadrim en 3 dimensions">-->
+        <div id="blep" class="mesh"></div>
     </section>
 
 
@@ -130,6 +131,15 @@
         </svg>
     </a>
 </div>
+<script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/"
+      }
+    }
+</script>
+<script type="module" src="assets/gmp/script.js"></script>
 <script src="assets/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
