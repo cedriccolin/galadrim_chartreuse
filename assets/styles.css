@@ -862,3 +862,24 @@ h1.big {
     font-weight: normal;
     font-style: italic;
 }
+
+
+.todo {
+    border: 5px solid #ff6542;
+    background: rgba(255, 132, 66, 0.5);
+    padding: 25px 50px;
+
+    width: 50%;
+    border-radius: 15px;
+
+    margin: 50px auto;
+
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+}
+
+.todo p {
+    margin: 20px auto;
+}
