@@ -85,7 +85,7 @@ nav .logo img, nav .logo a {
 }
 
 footer .link {
-    height: 100%;
+    height: 75%;
     margin: 0 0 0 auto;
 
     display: flex;
@@ -163,8 +163,8 @@ nav .opened_burger .docker {
 }
 
 nav .opened_burger .docker .link {
-    height: 400px;
-    margin-bottom: calc(75% - 400px);
+    height: 75%;
+    margin-bottom: 25%;
     width: 100%;
 
     display: flex;
@@ -174,7 +174,7 @@ nav .opened_burger .docker .link {
 
 nav .opened_burger .docker a {
     height: 20px;
-    margin: 40px 0 0 0;
+    margin: 10px 0 0 0;
     padding: 25px;
 
     display: flex;
@@ -184,6 +184,8 @@ nav .opened_burger .docker a {
     border-bottom: 2px solid transparent;
     text-decoration: none;
     text-align: center;
+
+    box-sizing: content-box;
 }
 
 nav .opened_burger .docker .waves {
@@ -226,9 +228,11 @@ nav .opened_burger .docker .waves svg {
 
 
 main {
-    margin-top: 61px;
     min-height: 500px;
-    padding: 20px;
+    padding: 61px 20px 20px 20px;
+    margin: 0 30px 0 30px;
+
+    background: #fff;
 }
 
 
@@ -308,433 +312,34 @@ footer .link a {
     }
 }
 
-.image_gauche{
-    width:95%;
-    height: 95%;
-}
-.description{
-    padding: 70px;
-    line-height: 155%;
-}
+/* Home de chaque page */
 
-/*
-
-
-Page engagement
-
-
-*/
-
-#texte_bilan_carbone{
-    text-align: justify;
-}
-
-.section_gauche{
+.home {
     display: flex;
     flex-direction: row;
-}
-
-
-
-#bilan_carbone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#bilan_carbone_texte{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section_droit{
-    display: flex;
-    flex-direction: row;
-}
-
-#enquete_bilan_texte{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#enquete_bilan_carbone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#reduction_carbone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
-.reduction_carbone_texte{
-    display: flex;
-    justify-content: center;
     align-items: center;
 
-}
-
-main.engagement{
-    margin: 61px 30px 0 30px;
-}
-
-
-main.engagement h1.title, main.engagement h2.title {
-    text-align: center;
-    margin: 50px auto;
-}
-
-/*main.engagement .container {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*}*/
-
-/*main.engagement .container h1, main.engagement .container h2 {*/
-/*    text-align: left;*/
-/*    margin: 0 auto 0 25px;*/
-/*}*/
-
-/*main.engagement .container .description {*/
-/*    margin: 25px auto 10px 25px;*/
-/*    padding: 0;*/
-/*}*/
-
-main.engagement .menu {
-    width: 80%;
-    margin: 0 auto;
     height: calc(100vh - 61px);
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-main.engagement .menu img {
-    width: 40%;
-}
-
-main.engagement .menu .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: left;
-    justify-content: left;
-
-    margin: auto 0 auto auto;
-
-    width: 50%;
-}
-
-main.engagement .menu .container button {
-    margin-right: auto;
-}
-main.engagement .menu .container p {
-    margin: 20px auto 40px 0;
-}
-main.engagement .menu .container h1 {
-    margin-right: auto;
-    margin-left: 0;
-}
-
-
-main.equipe {
-    padding: 20px 0 0 0;
-    margin: 0;
-
-    width: 100%;
-    height: auto;
-}
-
-main.equipe .start {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    height: calc(100vh - 61px); /* hauteur fenêtre - taille navigation */
     width: 75%;
     min-width: 600px;
 
     margin: 0 auto;
-}
-
-main.equipe .start img {
-    width: 40%;
-    height: auto;
-}
-
-main.equipe .start .content {
-    width: 40%;
-    margin: auto;
-}
-
-main.equipe .start .content p {
-    margin: 20px 0 50px 0;
-}
-
-main.equipe section#statistics {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: 100%;
-    margin: 20px 0 0 0;
-    padding: 20px 0;
-
-    background: #f1f1f1;
-}
-
-main.equipe section#statistics .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-auto-columns: minmax(100px, auto);
-    grid-gap: 5px;
-
-    margin: 30px 0;
-}
-
-main.equipe section#statistics .case {
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    padding: 20px;
 
     background: #fff;
 }
 
-main.equipe section#statistics #case1 {
-    grid-column: 1;
-}
-main.equipe section#statistics #case2 {
-    grid-column: 2;
-}
-main.equipe section#statistics #case3 {
-    grid-row: 2;
-    grid-column: 1 / 3;
-}
-main.equipe section#statistics #case4 {
-    grid-row: 1 / 3;
-    grid-column: 3;
-}
-
-
-
-/*
-
-
-Page accueil
-
-
-*/
-
-main.home {
-    width: 100%;
+.home img {
+    width: 40%;
     height: auto;
-
-    margin: 61px 0 0 0;
 }
 
-main.home .first_section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    width: 70%;
-    margin: 0 auto;
-
-    height: calc(100vh - 61px - 40px);
-}
-
-main.home .first_section .content {
-    width: calc(50% - 30px);
-}
-
-main.home .first_section .mesh {
-    width: 35%;
-    height: auto;
-
-    padding: 0 30px;
-
+.home .content {
+    width: 40%;
     margin: auto;
 }
 
-main.home section.part {
-    display: flex;
-    flex-direction: row;
-
-    height: 200px;
-
-    width: 70%;
-    margin: 100px auto;
-}
-
-main.home section.part img {
-    width: auto;
-    height: 100%;
-}
-
-main.home section.part .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: 50%;
-    margin: auto 0 auto auto;
-
-    text-align: left;
-}
-
-main.home section.part .container h2 {
-    font-weight: 700;
-    margin-right: auto;
-}
-
-
-
-main.home section.part.section_droit {
-    flex-direction: row-reverse;
-}
-main.home section.part.section_droit .container {
-    margin: auto auto auto 0;
-}
-
-
-
-/*
-
-
-Page presentation
-
-
- */
-
-main.presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-main.presentation .main_section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    width: 75%;
-
-    height: calc(100vh - 61px);
-}
-
-
-main.presentation .main_section img {
-    width: 40%;
-    margin: auto 40px auto 0;
-}
-
-main.presentation .main_section .docker {
-    width: 50%;
-    margin: auto 0 auto auto;
-}
-
-main.presentation .main_section .docker p {
-    margin: 20px auto 25px 0;
-}
-
-main.presentation section {
-    width: 80%;
-
-    margin: 20px auto;
-}
-
-    /**
-
-
-    Page destinée aux performances et réalisations de l'entreprise
-
-
-     */
-
-
-main.perf_rel section.flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    width: 75%;
-    margin: 25px auto;
-}
-
-main.perf_rel section.flex.reversed {
-    flex-direction: row-reverse;
-}
-
-/* Conteneur de texte dans chaque section */
-main.perf_rel .text-container {
-    width: 50%;
-    margin: 0 auto 0 0;
-}
-
-/* Image à côté du texte */
-main.perf_rel section img {
-    width: auto;
-    height: auto;
-    max-height: 500px;
-    margin-left: auto;
-}
-
-main.perf_rel section.reversed .text-container {
-    margin: 0 0 0 auto;
-}
-
-main.perf_rel section.reversed img {
-    margin: 0 auto 0 0;
-}
-
-main.perf_rel .section-big-title {
-    font-size: 3em;
-    text-align: center;
-}
-
-main.perf_rel .text-with-img {
-    max-width: 80%;
-}
-
-main.perf_rel .bloc {
-    width: 70%;
-    margin: 150px auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-}
-
-main.perf_rel .home {
-    height: calc(100vh - 61px - 40px);
-    width: 70%;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-main.perf_rel .home img {
-    max-width: 550px;
-}
-
-main.perf_rel .home .text-container {
-    margin-left: auto;
-    width: calc(100% - 550px - 50px);
+.home .content p {
+    margin: 20px 0 50px 0;
 }
 
 
@@ -781,6 +386,11 @@ main.perf_rel .home .text-container {
 }
 
 
+
+
+
+
+
 /* Normalisation du style des pages */
 
 
@@ -818,12 +428,16 @@ h1.big {
 
 .container  {
     width: 80%;
-    margin: 20px auto;
+    margin: 100px auto;
 
     display: flex;
     flex-direction: row;
 
     align-items: center;
+}
+
+.container:first-child {
+    margin-top: 20px;
 }
 
 .container.reversed {
