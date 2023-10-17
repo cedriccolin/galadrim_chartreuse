@@ -2,11 +2,11 @@
 
 > `gmp` signifie `Graphical Modelisation Playground`
 
-Ce dossier contient tous les fichiers de modélisations utilisés pendant le développement en production pour le modèle 3D de la page d'accueil
+Ce dossier contient tous les fichiers de modélisations utilisés pendant le développement en production pour le modèle 3D de la page d'accueil.
 
 ## Les différentes ressources
 
-- `galadrim2.blend`: Le modèle 3D accompagné d'une scène. La scène a été générée avec le logiciel libre **[Blender](https://www.blender.org/)** 
+- `galadrim2.blend`: Le modèle 3D accompagné d'une scène. La scène a été générée avec le logiciel libre **[Blender](https://www.blender.org/).** 
 - `galadrim2.blend1`: Des fichiers utiles au logiciel de modélisation.
 - `render.png`: Cette image est un rendu du modèle 3D, elle a été générée depuis le logiciel libre **Blender**
 - `galadrim2.gltf`: Ce fichier est une version exportée du modèle 3D, utilisable dans la plupart des moteurs de jeux et librairies 3D.
