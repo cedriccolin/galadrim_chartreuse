@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D test</title>
+
+    <style>
+        body {
+            background: #fafafa;
+
+            height: 100vh;
+            width: 100vw;
+
+            margin: 200px 0 0 0;
+        }
+
+        canvas {
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="blep"></div>
+</body>
+<script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/"
+      }
+    }
+</script>
+<script type="module">
+    import {
+        Scene,
+        PerspectiveCamera,
+        WebGLRenderer,
+        ACESFilmicToneMapping,
+        HemisphereLight,
+        PointLight,
+        AmbientLight,
+        DirectionalLight,
+        Mesh
+    } from "three";
+    import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js"; // https://cdn.jsdelivr.net/npm/three@0.151.3/examples/jsm/loaders/GLTFLoader.js
+
+    let scene, camera, loader, container, renderer, reader;
+
+    init().then(render);
+
+    async function init(){
+        container = document.getElementById("blep");
+
+        // load scene & camera
+
+        scene = new Scene();
+        camera = new PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.25, 100);
+        camera.position.set(0, 0.8, 14);
+
+        loader = new GLTFLoader();
+
+        // fetch & add the mesh to the scene
+
+        let meshes = await loader.loadAsync('assets/gmp/galadrim2.glb');
+        meshes.scene.rotation.y = Math.PI;
+        meshes.scene.traverse(function (node) {
+            if (node instanceof Mesh) {
+                node.castShadow = true;
+                node.receiveShadow = true;
+            }
+        });
+        scene.add(meshes.scene);
+
+        const hemiLight = new HemisphereLight(0xffffff, 0x8d8d8d, 3);
+        hemiLight.position.set(0, 20, 5);
+        scene.add(hemiLight);
+
+
+        const ambientLight = new AmbientLight(0x404040, 5);
+        scene.add(ambientLight);
+
+        const dirLight = new DirectionalLight(0xffffff, 1.25);
+        dirLight.position.set(5, 10, 8);
+        dirLight.castShadow = true;
+        scene.add(dirLight);
+
+        // create WebGL renderer
+
+        renderer = new WebGLRenderer({ alpha: true, antialias: true });
+
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(400, 400);
+        renderer.toneMapping = ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1;
+        container.appendChild(renderer.domElement);
+
+        onWindowResize()
+        console.log("WebGL renderer initiated & running")
+
+        window.addEventListener('resize', onWindowResize);
+    }
+
+    function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize( window.innerWidth, window.innerHeight );
+
+        render();
+    }
+
+    function render() {
+        renderer.render(scene, camera);
+    }
+</script>
+</html>
