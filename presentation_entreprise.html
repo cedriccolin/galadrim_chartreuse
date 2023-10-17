@@ -1,120 +1,404 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="TimeLine">
-    <meta name="author" content="Saym Ash">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="public/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/frise.css">
     <link rel="stylesheet" href="assets/styles.css">
-
-    <title>Présentation de l'entreprise | Team Chartreuse</title>
-
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="public/icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="public/icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="public/icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="public/icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="public/icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="public/icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="public/icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="public/icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="public/icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="public/icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="public/icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/icon/favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="public/icon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- OpenGraph -->
-    <meta property="og:title" content="Présentation de l'entreprise | Team Chartreuse">
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:description" content="Découvrez l'histoire de Team Chartreuse, de leurs débuts jusqu'à aujourd'hui. Explorez leur parcour, leurs réalisations et ce qui fait d'eux ce qu'ils sont aujourd'hui.">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.js"></script>
 </head>
+
+<title>Présentation de l'entreprise | Team Chartreuse</title>
+
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="public/icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="public/icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="public/icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="public/icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="public/icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="public/icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="public/icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="public/icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="public/icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="public/icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="public/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="public/icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="public/icon/favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="public/icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- OpenGraph -->
+<meta property="og:title" content="Présentation de l'entreprise | Team Chartreuse">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:description"
+    content="Découvrez l'histoire de Team Chartreuse, de leurs débuts jusqu'à aujourd'hui. Explorez leur parcour, leurs réalisations et ce qui fait d'eux ce qu'ils sont aujourd'hui.">
+</head>
+
 <body>
 
 
 
-<!-- la class 'burger_closed' et 'burger_opened' seront changés pour le CSS (ouverture/fermeture du menu) -->
-<nav class="burger_closed">
-    <div class="logo">
-        <a href="index.html">
-            <img src="public/image/logo_empty.png" alt="logo">
-        </a>
-    </div>
-    <div class="burger">
-        <!-- Quand le burger est fermé -->
-        <svg xmlns="http://www.w3.org/2000/svg" id="menu_invisible" viewBox="0 0 137 108" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.61111 0C3.40765 0 0 3.45384 0 7.71429C0 11.9747 3.40765 15.4286 7.61111 15.4286H129.389C133.592 15.4286 137 11.9747 137 7.71429C137 3.45384 133.592 0 129.389 0H7.61111ZM30.4444 54C30.4444 49.7394 33.8521 46.2857 38.0556 46.2857H129.389C133.592 46.2857 137 49.7394 137 54C137 58.2606 133.592 61.7143 129.389 61.7143H38.0556C33.8521 61.7143 30.4444 58.2606 30.4444 54ZM76.1111 100.286C76.1111 96.0251 79.5186 92.5714 83.7222 92.5714H129.389C133.592 92.5714 137 96.0251 137 100.286C137 104.546 133.592 108 129.389 108H83.7222C79.5186 108 76.1111 104.546 76.1111 100.286Z" fill="currentColor"/>
-        </svg>
-        <!-- Quand le burger est ouvert -->
-        <svg xmlns="http://www.w3.org/2000/svg" id="menu_visible" viewBox="0 0 27 28" fill="none">
-            <path d="M0.747151 1.71714C-0.24905 2.71209 -0.24905 4.32518 0.747151 5.32012L9.89247 14.4539L0.747151 23.5878C-0.24905 24.5827 -0.24905 26.1959 0.747151 27.1908C1.74333 28.1856 3.35848 28.1856 4.35465 27.1908L13.5 18.0568L22.6454 27.1908C23.6416 28.1856 25.2568 28.1856 26.2529 27.1908C27.249 26.1959 27.249 24.5827 26.2529 23.5878L17.1074 14.4539L26.2529 5.32015C27.249 4.32523 27.249 2.71211 26.2529 1.71719C25.2565 0.722242 23.6416 0.722242 22.6454 1.71719L13.5 10.8509L4.35465 1.71714C3.35848 0.722217 1.74333 0.722217 0.747151 1.71714Z" fill="currentColor"/>
-        </svg>
-    </div>
-    <!-- Contenu qui sera affiché quand la page est ouverte -->
-    <div class="opened_burger">
-        <div class="background"></div>
-        <div class="docker">
-            <div class="link">
-                <a href="presentation_entreprise.html">Presentation de l'entreprise</a>
-                <a href="equipe_personnel.html">L'équipe et le personnel</a>
-                <a href="performance_realisation.html">Performance et réalisation</a>
-                <a href="engagement_social_responsabilité.html">Engagement social et Responsabilité</a>
-                <a href="mentions_legales.html">Mentions légales</a>
+    <!-- la class 'burger_closed' et 'burger_opened' seront changés pour le CSS (ouverture/fermeture du menu) -->
+    <nav class="burger_closed">
+        <div class="logo">
+            <a href="index.html">
+                <img src="public/image/logo_empty.png" alt="logo">
+            </a>
+        </div>
+        <div class="burger">
+            <!-- Quand le burger est fermé -->
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu_invisible" viewBox="0 0 137 108" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.61111 0C3.40765 0 0 3.45384 0 7.71429C0 11.9747 3.40765 15.4286 7.61111 15.4286H129.389C133.592 15.4286 137 11.9747 137 7.71429C137 3.45384 133.592 0 129.389 0H7.61111ZM30.4444 54C30.4444 49.7394 33.8521 46.2857 38.0556 46.2857H129.389C133.592 46.2857 137 49.7394 137 54C137 58.2606 133.592 61.7143 129.389 61.7143H38.0556C33.8521 61.7143 30.4444 58.2606 30.4444 54ZM76.1111 100.286C76.1111 96.0251 79.5186 92.5714 83.7222 92.5714H129.389C133.592 92.5714 137 96.0251 137 100.286C137 104.546 133.592 108 129.389 108H83.7222C79.5186 108 76.1111 104.546 76.1111 100.286Z"
+                    fill="currentColor" />
+            </svg>
+            <!-- Quand le burger est ouvert -->
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu_visible" viewBox="0 0 27 28" fill="none">
+                <path
+                    d="M0.747151 1.71714C-0.24905 2.71209 -0.24905 4.32518 0.747151 5.32012L9.89247 14.4539L0.747151 23.5878C-0.24905 24.5827 -0.24905 26.1959 0.747151 27.1908C1.74333 28.1856 3.35848 28.1856 4.35465 27.1908L13.5 18.0568L22.6454 27.1908C23.6416 28.1856 25.2568 28.1856 26.2529 27.1908C27.249 26.1959 27.249 24.5827 26.2529 23.5878L17.1074 14.4539L26.2529 5.32015C27.249 4.32523 27.249 2.71211 26.2529 1.71719C25.2565 0.722242 23.6416 0.722242 22.6454 1.71719L13.5 10.8509L4.35465 1.71714C3.35848 0.722217 1.74333 0.722217 0.747151 1.71714Z"
+                    fill="currentColor" />
+            </svg>
+        </div>
+        <!-- Contenu qui sera affiché quand la page est ouverte -->
+        <div class="opened_burger">
+            <div class="background"></div>
+            <div class="docker">
+                <div class="link">
+                    <a href="presentation_entreprise.html">Presentation de l'entreprise</a>
+                    <a href="equipe_personnel.html">L'équipe et le personnel</a>
+                    <a href="performance_realisation.html">Performance et réalisation</a>
+                    <a href="engagement_social_responsabilité.html">Engagement social et Responsabilité</a>
+                </div>
+                <div class="waves">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+                        <rect width="1920" height="1080" fill="currentColor" />
+                        <path
+                            d="M 0,1080 C 0,1080 0,270 0,270 C 81.41025641025641,243.44615384615386 162.82051282051282,216.89230769230772 286,240 C 409.1794871794872,263.1076923076923 574.1282051282052,335.8769230769231 682,357 C 789.8717948717948,378.1230769230769 840.6666666666667,347.59999999999997 942,305 C 1043.3333333333333,262.40000000000003 1195.2051282051282,207.72307692307695 1296,181 C 1396.7948717948718,154.27692307692305 1446.5128205128206,155.5076923076923 1542,175 C 1637.4871794871794,194.4923076923077 1778.7435897435898,232.24615384615385 1920,270 C 1920,270 1920,1080 1920,1080 Z"
+                            fill="#006838" opacity="0.15" />
+                        <path
+                            d="M 0,1080 C 0,1080 0,540 0,540 C 118.27435897435893,548.0846153846154 236.54871794871787,556.1692307692308 332,554 C 427.45128205128213,551.8307692307692 500.0794871794873,539.4076923076923 608,558 C 715.9205128205127,576.5923076923077 859.1333333333334,626.2 969,602 C 1078.8666666666666,577.8 1155.3871794871795,479.79230769230776 1263,451 C 1370.6128205128205,422.20769230769224 1509.3179487179486,462.63076923076926 1624,489 C 1738.6820512820514,515.3692307692307 1829.3410256410257,527.6846153846154 1920,540 C 1920,540 1920,1080 1920,1080 Z"
+                            fill="#006838" opacity="0.3" />
+                        <path
+                            d="M 0,1080 C 0,1080 0,810 0,810 C 108.49230769230766,818.7179487179487 216.98461538461532,827.4358974358975 310,808 C 403.0153846153847,788.5641025641025 480.55384615384617,740.974358974359 598,760 C 715.4461538461538,779.025641025641 872.8,864.6666666666666 981,863 C 1089.2,861.3333333333334 1148.2461538461537,772.3589743589744 1251,768 C 1353.7538461538463,763.6410256410256 1500.2153846153847,843.8974358974359 1619,865 C 1737.7846153846153,886.1025641025641 1828.8923076923077,848.051282051282 1920,810 C 1920,810 1920,1080 1920,1080 Z"
+                            fill="#006838" opacity="0.44999999999999996" />
+                    </svg>
+                </div>
             </div>
-            <div class="waves">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="currentColor"/><path d="M 0,1080 C 0,1080 0,270 0,270 C 81.41025641025641,243.44615384615386 162.82051282051282,216.89230769230772 286,240 C 409.1794871794872,263.1076923076923 574.1282051282052,335.8769230769231 682,357 C 789.8717948717948,378.1230769230769 840.6666666666667,347.59999999999997 942,305 C 1043.3333333333333,262.40000000000003 1195.2051282051282,207.72307692307695 1296,181 C 1396.7948717948718,154.27692307692305 1446.5128205128206,155.5076923076923 1542,175 C 1637.4871794871794,194.4923076923077 1778.7435897435898,232.24615384615385 1920,270 C 1920,270 1920,1080 1920,1080 Z" fill="#006838" opacity="0.15"/><path d="M 0,1080 C 0,1080 0,540 0,540 C 118.27435897435893,548.0846153846154 236.54871794871787,556.1692307692308 332,554 C 427.45128205128213,551.8307692307692 500.0794871794873,539.4076923076923 608,558 C 715.9205128205127,576.5923076923077 859.1333333333334,626.2 969,602 C 1078.8666666666666,577.8 1155.3871794871795,479.79230769230776 1263,451 C 1370.6128205128205,422.20769230769224 1509.3179487179486,462.63076923076926 1624,489 C 1738.6820512820514,515.3692307692307 1829.3410256410257,527.6846153846154 1920,540 C 1920,540 1920,1080 1920,1080 Z" fill="#006838" opacity="0.3"/><path d="M 0,1080 C 0,1080 0,810 0,810 C 108.49230769230766,818.7179487179487 216.98461538461532,827.4358974358975 310,808 C 403.0153846153847,788.5641025641025 480.55384615384617,740.974358974359 598,760 C 715.4461538461538,779.025641025641 872.8,864.6666666666666 981,863 C 1089.2,861.3333333333334 1148.2461538461537,772.3589743589744 1251,768 C 1353.7538461538463,763.6410256410256 1500.2153846153847,843.8974358974359 1619,865 C 1737.7846153846153,886.1025641025641 1828.8923076923077,848.051282051282 1920,810 C 1920,810 1920,1080 1920,1080 Z" fill="#006838" opacity="0.44999999999999996"/></svg>
+        </div>
+    </nav>
+
+
+    <main class="presentation ">
+        <div class="main_section">
+            <img src="public/svg/presentation_home.svg" alt="presentation_home">
+            <div class="docker">
+                <h1>Galadrim, une histoire de passion</h1>
+                <p>Galadrim a été créé il y a 6 ans par 2 anciens étudiants de Polytechnique, basée au 2d arrondissement
+                    de Paris.<br>À sa direction se trouvent les deux cofondateurs du groupe : Jean Ashton, CEO, et
+                    Arnaud Albalat, CTO</p>
+                <button onclick="window.location.href='#histoire'">Découvrir son histoire</button>
             </div>
         </div>
-    </div>
-</nav>
+        <section id="histoire">
+            <h2>Son histoire</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </section>
+    </main>
 
 
-<main class="presentation">
-    <div class="main_section">
-        <img src="public/svg/presentation_home.svg" alt="presentation_home">
-        <div class="docker">
-            <h1>Galadrim, une histoire de passion</h1>
-            <p>Galadrim a été créé il y a 6 ans par 2 anciens étudiants de Polytechnique, basée au 2d arrondissement de Paris.<br>À sa direction se trouvent les deux cofondateurs du groupe : Jean Ashton, CEO, et Arnaud Albalat, CTO</p>
-            <button onclick="window.location.href='#histoire'">Découvrir son histoire</button>
+
+
+    <body>
+
+
+        <div class="UpperPart grid-container fluid">
+            <div class="grid-x">
+                <div class="UpperPart-text large-6 medium-12 small-12 cell">
+                    <h2 class="UpperPart-Title">Mussum ipsum cacilds</h2>
+                    <h4 class="UpperPart-SubTitle">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings
+                        elitis.
+                        Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum
+                        girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci
+                        latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                    </h4>
+                    <p class="UpperPart-Description">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings
+                        elitis.
+                        Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum
+                        girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci
+                        latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                    </p>
+                    <p class="UpperPart-Description">
+                        Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
+                        porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
+                        vermeio, in
+                        elementis mé pra quem é amistosis quis leo.
+                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci
+                        latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                    </p>
+                </div>
+                <div class="UpperPart-Img large-6 medium-12 small-12 cell">
+                    <img src="http://via.placeholder.com/600x750" alt="">
+                </div>
+            </div>
         </div>
-    </div>
-    <section id="histoire">
-        <h2>Son histoire</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </section>
-</main>
 
-<footer>
-    <div class="footer_section">
-        <p>Eleve en charge de cette page : Corentin CONTINO</p>
-    </div>
-    <div class="footer_section">
-        <div class="link">
-            <a href="presentation_entreprise.html">Presentation de l'entreprise</a>
-            <a href="equipe_personnel.html">L'équipe et le personnel</a>
-            <a href="performance_realisation.html">Performance et réalisation</a>
-            <a href="engagement_social_responsabilité.html">Engagement social et Responsabilité</a>
-            <a href="mentions_legales.html">Mentions légales</a>
+
+        <div class="large-12 medium-12 small-12 connection-line">
+            <div class="horizontal-lines" id="line-right"></div>
         </div>
-    </div>
-</footer>
-<div class="go_top">
-    <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-            <path d="M12 6V18M12 6L7 11M12 6L17 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </a>
-</div>
-<script src="assets/script.js"></script>
-</body>
+
+
+
+        <ul class="timeline">
+            <li>
+                <div class="timeline-badge">2017</div>
+                <div class="timeline-panel">
+                    <div class="timeline-panel-body">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">La Création</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                            <p>Galadrim a été créé il y a 6 ans par 2 anciens étudiants de Polytechnique, basée au 2d
+                                arrondissement de Paris.<br>À
+                                sa direction se trouvent les deux cofondateurs du groupe : Jean Ashton, CEO, et Arnaud
+                                Albalat, CTO</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-panel timeline-inverted timeline-panel-img">
+                    <div class="timeline-panel-body">
+                        <img src="http://via.placeholder.com/400x400" alt="">
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="timeline-badge">2018</div>
+                <div class="timeline-panel">
+                    <div class="timeline-panel-body">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
+                                divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
+                                nisi
+                                eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                                Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis
+                                i
+                                pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-panel timeline-inverted">
+                    <div class="timeline-panel-body">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Consetis adipiscings elitis</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis,
+                                espiritis santis. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui
+                                num
+                                significa nadis i pareci latim. Interessantiss quisso pudia ce
+                                receita de bolis, mais bolis eu num gostis.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="timeline-panel timeline-panel-img">
+                    <div class="timeline-panel-body">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
+                                divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
+                                nisi
+                                eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                                Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis
+                                i
+                                pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="timeline-badge">2019</div>
+                <div class="timeline-panel">
+                    <div class="timeline-panel-body">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
+                                divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
+                                nisi
+                                eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                                Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis
+                                i
+                                pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-panel timeline-inverted">
+                    <div class="timeline-panel-body">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Consetis adipiscings elitis</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis,
+                                espiritis santis. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui
+                                num
+                                significa nadis i pareci latim. Interessantiss quisso pudia ce
+                                receita de bolis, mais bolis eu num gostis.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel timeline-inverted timeline-panel-img">
+                    <div class="timeline-panel-body">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Consetis adipiscings elitis</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis,
+                                espiritis santis. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui
+                                num
+                                significa nadis i pareci latim. Interessantiss quisso pudia ce
+                                receita de bolis, mais bolis eu num gostis.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="timeline-badge">2021</div>
+                <div class="timeline-panel">
+                    <div class="timeline-panel-body">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
+                                divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
+                                nisi
+                                eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                                Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis
+                                i
+                                pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-panel timeline-inverted timeline-panel-img">
+                    <div class="timeline-panel-body">
+                        <img src="http://via.placeholder.com/400x400" alt="">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-badge">2022</div>
+                <div class="timeline-panel timeline-panel-img">
+                    <div class="timeline-panel-body">
+                        <img src="http://via.placeholder.com/400x400" alt="">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-badge">2023</div>
+                <div class="timeline-panel">
+                    <div class="timeline-panel-body">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
+                                divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
+                                nisi
+                                eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                                Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis
+                                i
+                                pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-panel timeline-inverted">
+                    <div class="timeline-panel-body">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Consetis adipiscings elitis</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis,
+                                espiritis santis. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui
+                                num
+                                significa nadis i pareci latim. Interessantiss quisso pudia ce
+                                receita de bolis, mais bolis eu num gostis.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-badge">End</div>
+            </li>
+        </ul>
+
+
+        <div class="grid-container fluid">
+            <div class="endpart">
+                <p>Merci d'avoir lu c'est encore en travail</p>
+            </div>
+        </div>
+        <script src="./js/timeline.js"></script>
+        <script src="./js/fadeIn.js"></script>
+        <script src="./assets/frise.js"></script>
+
+
+
+        <footer>
+            <div class="footer_section">
+                <p>Eleve en charge de cette page : Corentin CONTINO</p>
+            </div>
+            <div class="footer_section">
+                <div class="link">
+                    <a href="presentation_entreprise.html">Presentation de l'entreprise</a>
+                    <a href="equipe_personnel.html">L'équipe et le personnel</a>
+                    <a href="performance_realisation.html">Performance et réalisation</a>
+                    <a href="engagement_social_responsabilité.html">Engagement social et Responsabilité</a>
+                </div>
+            </div>
+        </footer>
+        <div class="go_top">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 6V18M12 6L7 11M12 6L17 11" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+        <script src="assets/script.js"></script>
+    </body>
+
 </html>
