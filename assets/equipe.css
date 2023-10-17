@@ -1,0 +1,47 @@
+
+main.equipe section#statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 20px 0;
+
+    background: #f1f1f1;
+}
+
+main.equipe section#statistics .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(100px, auto);
+    grid-gap: 5px;
+
+    margin: 30px 0;
+}
+
+main.equipe section#statistics .case {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+
+    background: #fff;
+}
+
+main.equipe section#statistics #case1 {
+    grid-column: 1;
+}
+main.equipe section#statistics #case2 {
+    grid-column: 2;
+}
+main.equipe section#statistics #case3 {
+    grid-row: 2;
+    grid-column: 1 / 3;
+}
+main.equipe section#statistics #case4 {
+    grid-row: 1 / 3;
+    grid-column: 3;
+}
