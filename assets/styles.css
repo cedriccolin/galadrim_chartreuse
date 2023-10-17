@@ -817,7 +817,7 @@ h1.big {
 
 .container  {
     width: 80%;
-    margin: 10px auto;
+    margin: 20px auto;
 
     display: flex;
     flex-direction: row;
@@ -839,10 +839,22 @@ h1.big {
     margin: 0 auto 0 0;
 }
 
+.container.reversed .right {
+    max-width: 40%;
+    margin: 0 0 0 auto;
+}
+
+.container.reversed .left {
+    width: 40%;
+    margin: 0 0 0 auto;
+}
+
 .container .image img {
     max-width: 80%;
     height: auto;
     max-height: 350px;
+
+    border-radius: 5px;
 }
 
 .container .image h6 {
