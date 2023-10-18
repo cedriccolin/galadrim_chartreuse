@@ -8,7 +8,7 @@ Cette branche est la branche associée au développement du site web.
 
 # Sujet
 
-[Acceuil | Team Chartreuse](https://cedriccolin.github.io/galadrim_chartreuse/)
+[Accueil | Team Chartreuse (github.io)](https://cedriccolin.github.io/galadrim_chartreuse/)
 
 ## Membres du groupe 
 
