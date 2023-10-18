@@ -51,7 +51,6 @@ async function init(){
     hemiLight.position.set(0, 20, 5);
     scene.add(hemiLight);
 
-
     const ambientLight = new AmbientLight(0x404040, 5);
     scene.add(ambientLight);
 
