@@ -1,26 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'League Spartan', sans-serif;
     color: #000000;
     background: #ffffff;
 }
 
-a {
-    text-underline: none;
-    text-decoration: none;
-    color: currentColor;
-}
-
-a:hover {
-    color: #00A559;
-}
-
 button {
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
 
     background: #006838;
 
@@ -37,6 +27,11 @@ button {
     transition: 0.15s ease;
 }
 
+button a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
 button:hover {
     background: #00A559;
     transition: 0.15s ease;
@@ -49,9 +44,20 @@ button a {
 }
 
 button a:hover {
-    color: #fff;
+    color: #fff
 }
 
+
+
+a {
+    text-decoration: underline;
+    color: #006838;
+}
+
+a:hover { color: #00A559 }
+a:active { color: #109A81; }
+a:visited { color: #054528 }
+a:hover { color: #00A559; }
 
 
 
@@ -270,6 +276,7 @@ footer .link {
 footer .link a {
     margin: auto;
     padding: 10px 0;
+    text-decoration: none;
 
     width: 400px;
 }
@@ -356,16 +363,20 @@ footer .link a {
     height: 50px;
 
     background: #000;
-    border-radius: 12px;
+    border-radius: 50%;
     color: #fafafa;
     transition: 0.15s ease;
+}
+
+.go_top a {
+    color: #fff;
 }
 
 .go_top img {
     height: 45px;
     width: 45px;
 
-    color: #fff;
+    color: #fff ;
 
     margin: auto;
     transition: 0.15s ease;
@@ -376,6 +387,12 @@ footer .link a {
     color: #000;
 
     box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    transition: 0.15s ease;
+}
+
+.go_top:hover a {
+    color: #00A559;
+
     transition: 0.15s ease;
 }
 
@@ -395,7 +412,7 @@ footer .link a {
 
 
 p {
-    font-size: 18px;
+    font-size: 19px;
 }
 
 h1 {
