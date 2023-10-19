@@ -679,3 +679,19 @@
     }
 
 }
+
+.centrage_carteS {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background:  #fff;
+}
+
+.centrage_carteS .centrage_carte {
+    margin: auto;
+}
+
+
+
+
