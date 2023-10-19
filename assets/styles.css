@@ -582,3 +582,10 @@ h1.big {
     font-size: 16px;
     margin: auto;
 }
+
+
+.title {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
