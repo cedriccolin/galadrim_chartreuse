@@ -586,8 +586,35 @@ h1.big {
 
 .title {
     text-align: center;
-
     background: #fff;
     margin: 0 auto 0 auto;
     padding: 20px 0;
+}
+
+.centrage_carte {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centrage_carteS {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+
+.centrage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+#carte{
+    background-color: whitesmoke;
+}
+
+#Carte {
+padding: 20px;
 }
