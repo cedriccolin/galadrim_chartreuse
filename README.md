@@ -24,7 +24,43 @@ d’engagement de l’entreprise Galadrim.
 
 ## Choix de conception
 
-Lorem Ipsum
+### Le site de Cyril Lignac
+
+Le site de Cyril Lignac se distingue par son utilisation efficace des nuances de blanc,
+créant une esthétique épurée et professionnelle. Cette approche visuelle peut être adaptée
+à notre site pour transmettre une image de clarté, de transparence et de professionnalisme.
+
+De plus, la structure du site est organisée de manière logique, avec une hiérarchie
+visuelle claire. Cela facilite la lecture et la navigation pour les visiteurs. En utilisant une
+structure similaire, nous pouvons garantir que les informations sur votre site seront
+présentées de manière ordonnée et facilement compréhensible.
+
+### Le site de Galadrim
+Le site Galadrim adopte un style numérique moderne, avec des éléments visuels tels
+que des graphiques dynamiques et des animations subtiles. Cela peut être une source
+d'inspiration pour donner à votre site une touche de modernité et de technologie, ce qui
+peut être pertinent pour une entreprise du numérique.
+
+Et le choix de couleurs utilisé sur le site créé une palette visuelle distinctive et assez
+complète. En adaptant une palette de couleurs unique pour votre site, nous pourrions
+renforcer l'identité visuelle de l'entreprise Galadrim.
+
+### Le site d'Anne Sophie kinésiologue
+Le site d'Anne Sophie, kinésiologue, présente un pied de page bien structuré avec
+des liens utiles vers d'autres pages du site, les coordonnées de contact, et des icônes de
+réseaux sociaux. Cette organisation permet aux visiteurs de trouver rapidement des
+informations importantes et de naviguer plus facilement sur le site. Nous pourrons intégrer
+un pied de page similaire pour améliorer la convivialité de votre site.
+
+De même pour le bouton "Retour en haut de page" qui facilite la navigation pour les
+visiteurs, en leur permettant de revenir rapidement en haut de la page sans faire défiler.
+Cela peut être une petite amélioration qui rendra la navigation sur notre site plus fluide.
+
+
+## Contributeurs
+
+![Graphique des contributions](screenshots/engagement_graph_global.png)
+![Graphique individuel des contributions](screenshots/contributeurs.png)
 
 
 ## Développement Site Web et Validation des pages
