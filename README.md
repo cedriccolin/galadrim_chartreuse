@@ -33,7 +33,7 @@ Lorem Ipsum
 
 **Auteur : Marvyn LEVIN**
 
-Vérificateur W3C : [index.html](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2F)
+Vérificateur W3C : [Capture d'écran de la conformité de la page...](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2F)
 
 ![home_w3c.png](screenshots/home_w3c.png)
 
@@ -41,7 +41,7 @@ Vérificateur W3C : [index.html](https://validator.w3.org/nu/?showsource=yes&sho
 
 **Auteur : Corentin CONTINO**
 
-Vérificateur W3C : [presentation_entreprise.html](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fpresentation_entreprise.html)
+Vérificateur W3C : [Capture d'écran de la conformité de la page...](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fpresentation_entreprise.html)
 
 ![presentation_w3c.png](screenshots/presentation_w3c.png)
 
@@ -49,7 +49,7 @@ Vérificateur W3C : [presentation_entreprise.html](https://validator.w3.org/nu/?
 
 **Auteur : Cédric COLIN**
 
-Vérificateur W3C : [equipe_personnel.html](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fequipe_personnel.html)
+Vérificateur W3C : [Capture d'écran de la conformité de la page...](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fequipe_personnel.html)
 
 ![equipe_w3c.png](screenshots/equipe_w3c.png)
 
@@ -57,7 +57,7 @@ Vérificateur W3C : [equipe_personnel.html](https://validator.w3.org/nu/?showsou
 
 **Auteur : Simon COMBE**
 
-Vérificateur W3C : [performance_realisation.html](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fperformance_realisation.html)
+Vérificateur W3C : [Capture d'écran de la conformité de la page...](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fperformance_realisation.html)
 
 ![perfs_reals_w3c.png](screenshots/perfs_reals_w3c.png)
 
@@ -65,7 +65,9 @@ Vérificateur W3C : [performance_realisation.html](https://validator.w3.org/nu/?
 
 **Auteur : Baptiste DULIEUX**
 
-Vérificateur W3C : [engagement_social_responsabilité.html](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fengagement_social_responsabilit%25C3%25A9.html)
+Vérificateur W3C : [Capture d'écran de la conformité de la page...](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fcedriccolin.github.io%2Fgaladrim_chartreuse%2Fengagement_social_responsabilit%25C3%25A9.html)
+
+![engagement_w3c.png](screenshots/engagement_w3c.png)
 
 ## Répartition du travail
 
