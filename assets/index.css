@@ -1,0 +1,12 @@
+.center-img {
+    margin: 0 auto; 
+    display: block;
+}
+
+section.text {
+    margin: 100px;
+}
+
+section.text p.justify-txt {
+    text-align: justify;
+}
