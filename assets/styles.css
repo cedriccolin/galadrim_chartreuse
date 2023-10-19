@@ -589,3 +589,32 @@ h1.big {
     margin-left: auto;
     text-align: center;
 }
+
+.centrage_carte {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centrage_carteS {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+
+.centrage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+#carte{
+    background-color: whitesmoke;
+}
+
+#Carte {
+padding: 20px;
+}
+
