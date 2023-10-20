@@ -3,6 +3,7 @@
 ## Sujet
 
 [Accueil | Team Chartreuse (github.io)](https://cedriccolin.github.io/galadrim_chartreuse/)
+
 [Accueil | Team Chartreuse (gitlab.io)](https://galadrim-chartreuse-cedriccolin-533234ebad0ef47fce28e194b3b878b.gitlab.io/)
 
 ## Membres du groupe 
